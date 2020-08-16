@@ -75,3 +75,53 @@ WHSend(Webhook_Instance, logging)
 
 Setting logging to `true` will result in http request results being logged
 
+
+#### Example
+---
+
+**OOP:**
+
+```Lua
+local myWebhook = Webhook.new("Webhook_url", "Filex")
+myWebhook:setAvatar(
+    "https://images-ext-1.discordapp.net/external/tu5pFIDBWXmNApJq8kPjuYx2p_O88vIiHaOGay5bs2k/%3Fsize%3D256/https/cdn.discordapp.com/avatars/512027289718882306/4e292939e36f079ee8b93a857a35e8eb.png"
+)
+myWebhook:setContent("My Webhook Library Example.")
+local myWHEmbed = myWebhook:setEmbed("My Library's Embed")
+myWHEmbed:setColor("15281718")
+myWHEmbed:setDescription("Some Text")
+myWHEmbed:setField("Some Field", "Text", false)
+myWHEmbed:setField("Some Field", "Text", true)
+myWHEmbed:setField("Some Field", "Text", true)
+myWHEmbed:setImage(
+    "https://images-ext-1.discordapp.net/external/tu5pFIDBWXmNApJq8kPjuYx2p_O88vIiHaOGay5bs2k/%3Fsize%3D256/https/cdn.discordapp.com/avatars/512027289718882306/4e292939e36f079ee8b93a857a35e8eb.png"
+)
+myWebhook:Send(false)
+```
+
+
+**NO-OOP**
+
+```Lua
+local myWebhook = Webhook("Webhook_url", "Filex")
+WHSetAvatar(
+    myWebhook,
+    "https://images-ext-1.discordapp.net/external/tu5pFIDBWXmNApJq8kPjuYx2p_O88vIiHaOGay5bs2k/%3Fsize%3D256/https/cdn.discordapp.com/avatars/512027289718882306/4e292939e36f079ee8b93a857a35e8eb.png"
+)
+WHSetContent(myWebhook, "My Webhook Library Example.")
+local myWHEmbed = WHSetEmbed(myWebhook, "My Library's Embed")
+WHESetColor(myWebhook, "15281718")
+WHESetDescription(myWebhook, "Some Text")
+WHESetField(myWebhook, "Some Field", "Text", false)
+WHESetField(myWebhook, "Some Field", "Text", true)
+WHESetField(myWebhook, "Some Field", "Text", true)
+WHESetImage(
+    myWebhook,
+    "https://images-ext-1.discordapp.net/external/tu5pFIDBWXmNApJq8kPjuYx2p_O88vIiHaOGay5bs2k/%3Fsize%3D256/https/cdn.discordapp.com/avatars/512027289718882306/4e292939e36f079ee8b93a857a35e8eb.png"
+)
+WHSend(myWebhook, false)
+````
+
+**Result**
+
+![Result](https://i.imgur.com/x31ww2B.png)
