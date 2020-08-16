@@ -40,28 +40,28 @@ All the functions are as following with specific arguments:
     Webhook_Instance:setContent(content)
     Webhook_Instance = WHSetContent(Webhook_Instance, content)
     -- To set a new Embed
-    Webhook_Instance:setEmbed(title)
+    Embed_Instance Webhook_Instance:setEmbed(title)
     Webhook_Instance = WHSetEmbed(Webhook_Instance, title)
     -- To Set Embed Author
-    Webhook_Instance:setAuthor(name, url, icon_url)
+    Embed_Instance:setAuthor(name, url, icon_url)
     Webhook_Instance = WHESetAuthor(Webhook_Instance, url, icon_url)
     -- To Set Embed URL
-    Webhook_Instance:setURL(url)
+    Embed_Instance:setURL(url)
     Webhook_Instance = WHESetURL(Webhook_Instance, url)
     -- To Set Embed Description
-    Webhook_Instance:setDescription(description)
+    Embed_Instance:setDescription(description)
     Webhook_Instance = WHESetDescription(Webhook_Instance, description)
     -- To Set Embed Color
-    Webhook_Instance:setColor(color)
+    Embed_Instance:setColor(color)
     Webhook_Instance = WHESetColor(Webhook_Instance, color)
     -- To Set Embed Thumbnail
-    Webhook_Instance:setThumbnail(url)
+    Embed_Instance:setThumbnail(url)
     Webhook_Instance = WHESetThumbnail(Webhook_Instance, url)
     -- To Set Embed Image
-    Webhook_Instance:setImage(url)
+    Embed_Instance:setImage(url)
     Webhook_Instance = WHESetImage(Webhook_Instance, url)
     -- To Set Embed Footer
-    Webhook_Instance:setFooter(text, icon_url)
+    Embed_Instance:setFooter(text, icon_url)
     Webhook_Instance = WHESetFooter(Webhook_Instance, text, icon_url)
 
 ```

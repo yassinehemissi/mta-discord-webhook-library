@@ -52,9 +52,11 @@ function Embed:setAuthor(name, url, icon_url)
     assert(type(name) == "string", "[WEBHOOK-LIBRARY] Expected string at argument 1 got " .. type(name))
     assert(type(url) == "string", "[WEBHOOK-LIBRARY] Expected string at argument 2 got " .. type(url))
     assert(type(icon_url) == "string", "[WEBHOOK-LIBRARY] Expected string at argument 3 got " .. type(icon_url))
-    self.name = name
-    self.url = url
-    self.icon_url = icon_url
+    self.author = {
+        name = name,
+        url = url,
+        icon_url = icon_url
+    }
 end
 
 function Embed:setURL(url)

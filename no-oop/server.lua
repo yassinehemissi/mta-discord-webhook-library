@@ -51,9 +51,11 @@ function WHESetAuthor(webhook, name, url, icon_url)
     assert(type(name) == "string", "[WEBHOOK-LIBRARY] Expected string at argument 2 got " .. type(name))
     assert(type(url) == "string", "[WEBHOOK-LIBRARY] Expected string at argument 3 got " .. type(url))
     assert(type(icon_url) == "string", "[WEBHOOK-LIBRARY] Expected string at argument 4 got " .. type(icon_url))
-    webhook.embeds[1].name = name
-    webhook.embeds[1].url = url
-    webhook.embeds[1].icon_url = icon_url
+    webhook.embeds[1].author = {
+        name = name,
+        url = url,
+        icon_url = icon_url
+    }
     return webhook
 end
 
@@ -120,3 +122,4 @@ function WHSend(webhook, logging)
     fetchRemote(webhook.webhook_url, SEND_OPTIONS, sendCallBack, {logging})
     return webhook
 end
+
