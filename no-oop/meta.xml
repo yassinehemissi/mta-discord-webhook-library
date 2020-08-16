@@ -1,0 +1,19 @@
+<meta>
+	<info author="Filex" name="MTA-Discord-Webhooks-Library" description="This library allows an easier communication with discord webhook API." />
+	<min_mta_version server="1.5.4-9.11342" />
+	<script src="server.lua" type="server" />
+	<export function="Webhook" />
+	<export function="Embed" />
+	<export function="WHSetAvatar" />
+	<export function="WHSetContent" />
+	<export function="WHSetEmbed" />
+	<export function="WHESetAuthor" />
+	<export function="WHESetURL" />
+	<export function="WHESetDescription" />
+	<export function="WHESetColor" />
+	<export function="WHESetField" />
+	<export function="WHESetThumbnail" />
+	<export function="WHESetImage" />
+	<export function="WHESetFooter" />
+	<export function="WHSend" />
+</meta>

@@ -1,0 +1,6 @@
+<meta>
+	<info author="Filex" name="MTA-Discord-Webhooks-Library" description="This library allows an easier communication with discord webhook API." />
+	<min_mta_version server="1.5.4-9.11342" />
+	<oop>true</oop>
+	<script src="server.lua" type="server" />
+</meta>
