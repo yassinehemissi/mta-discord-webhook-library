@@ -104,7 +104,7 @@ myWebhook:Send(false)
 
 ```Lua
 local myWebhook = Webhook("Webhook_url", "Filex")
-WHSetAvatar(
+myWebhook = WHSetAvatar(
     myWebhook,
     "https://images-ext-1.discordapp.net/external/tu5pFIDBWXmNApJq8kPjuYx2p_O88vIiHaOGay5bs2k/%3Fsize%3D256/https/cdn.discordapp.com/avatars/512027289718882306/4e292939e36f079ee8b93a857a35e8eb.png"
 )
